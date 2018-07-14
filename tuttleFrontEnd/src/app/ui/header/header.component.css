@@ -1,0 +1,40 @@
+button{
+  margin-right: 10px;
+  color: darkgray;
+  font-weight: 100;
+}
+.headerContainer{
+  background-color: #f5f6f7;
+}
+
+.filterButton::after {
+  display:none;
+}
+
+.navbar{
+  background-color: #f5f6f7;
+}
+
+.campaginsButton{
+  background-color: #f5f6f7;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.filterButton {
+  border: none;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.spacer{
+  flex-grow: 1;
+}
+
+.filterText{
+  margin-left: 5px;
+}
