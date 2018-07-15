@@ -1,0 +1,21 @@
+.createCardContainer{
+  height: 400px;
+  width: 270px;
+  border-radius: 5px;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: lightgray;
+  color: gray;
+  text-align: center;
+  margin: 15px;
+
+}
+
+.text {
+  margin-top: 175px;
+}
+
+.createCardContainer:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}

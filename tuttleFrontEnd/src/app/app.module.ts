@@ -7,6 +7,8 @@ import {MainComponent} from './routes/main/main.component';
 import {AppRoutingModule} from './app-routing.module';
 import { SearchComponent } from './ui/search/search.component';
 import { CalendarComponent } from './ui/calendar/calendar.component';
+import {CardHttpService} from './http-services/repository/card-http.service';
+import { CreateCardComponent } from './ui/create-card/create-card.component';
 
 
 @NgModule({
@@ -16,13 +18,14 @@ import { CalendarComponent } from './ui/calendar/calendar.component';
     CardComponent,
     HeaderComponent,
     SearchComponent,
-    CalendarComponent
+    CalendarComponent,
+    CreateCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CardHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
