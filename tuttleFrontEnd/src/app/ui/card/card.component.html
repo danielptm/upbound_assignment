@@ -1,16 +1,30 @@
 <div class="cardContainer">
-  <img class="image" src="https://s3.envato.com/files/127629670/01_both.png" />
-  <div class="cardContent">
-    <div class="informationBox">
-      <p>{{card.cardTitle}}</p>
-      <p>{{card.cardDescription}}}</p>
+  <div
+    class="image"
+    [ngStyle]="{'backgroundImage': 'url('+card.primaryMediaUrl+')'}">
+    <div class="cardButton">
+      <i class="fas fa-pencil-alt"></i>
+      <div class="cardButtonDropdown">
+        <div class="menuItem"><i class="fas fa-edit"></i><span class="menuItemText">Edit</span></div>
+        <hr>
+        <div class="menuItem"><i class="far fa-check-circle"></i><span class="menuItemText">Publish</span></div>
+        <hr>
+        <div class="menuItem"><i class="fas fa-share-alt"></i><span class="menuItemText">Share</span></div>
+        <hr>
+        <div class="menuItem"><i class="fas fa-trash-alt"></i><span class="menuItemText">Delete</span></div>
+      </div>
     </div>
+  </div>
+  <div class="cardContent">
     <div class="priceState">
       <div>
-        <div class="cardPrice"></div>
-        <div class="cardState"></div>
-      </div>
-      <div class="progressBar">
+        <div class="priceState">
+          <div>{{card.cardTitle}}</div>
+          <div class="price">hi</div>
+          <div class="cardState">hi</div>
+          <div class="progressBar">
+          </div>
+        </div>
       </div>
     </div>
   </div>

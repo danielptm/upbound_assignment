@@ -4,7 +4,7 @@ export class Card {
   campaignId: string;
   cardTitle: string;
   cardDescription: string;
-  primaryMediaurl: string;
+  primaryMediaUrl: string;
   cardStartDate: Date;
   cardEndDate: Date;
   listOfPlans: Plan[];

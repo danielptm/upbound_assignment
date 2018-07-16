@@ -1,5 +1,5 @@
 .createCardContainer{
-  height: 400px;
+  height: 328px;
   width: 270px;
   border-radius: 5px;
   border-style: dotted;
@@ -12,7 +12,7 @@
 }
 
 .text {
-  margin-top: 175px;
+  margin-top: 130px;
 }
 
 .createCardContainer:hover {
