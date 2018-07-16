@@ -1,5 +1,6 @@
 .cardContainer{
-  margin: 15px;
+  margin-left: 25px;
+  margin-top: 15px;
   background-color: whitesmoke;
   height: 415px;
   width: 270px;
@@ -23,4 +24,11 @@
   background-color: white;
   margin: auto;
   width: 98%;
+}
+
+@media only screen and (max-width: 600px){
+  .cardContainer{
+    margin: auto;
+  }
+
 }
