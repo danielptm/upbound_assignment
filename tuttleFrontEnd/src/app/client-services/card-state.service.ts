@@ -15,7 +15,7 @@ export class CardStateService {
       this.cardHttp.getCards()
         .subscribe((cards: Card[]) => {
           this.cards = cards;
-          resolve(cards);
+          resolve(this.cards);
         });
     });
   }

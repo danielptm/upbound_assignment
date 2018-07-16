@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {CardStateService} from '../../client-services/card-state.service';
+import {Card} from '../../http-services/model/card/Card';
 
 @Component({
   selector: 'app-main',
@@ -7,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  cards = ['', '', '', '', '', ''];
 
-  constructor() { }
+  cards: Card[] = [];
+
+  constructor(private cardState: CardStateService) { }
 
   ngOnInit() {
+    this.cardState.getCards()
+      .then((cards: Card[]) => {
+        this.cards = cards;
+      });
   }
-
 }

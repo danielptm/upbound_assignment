@@ -9,6 +9,8 @@ import { SearchComponent } from './ui/search/search.component';
 import { CalendarComponent } from './ui/calendar/calendar.component';
 import {CardHttpService} from './http-services/repository/card-http.service';
 import { CreateCardComponent } from './ui/create-card/create-card.component';
+import {CardStateService} from './client-services/card-state.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -23,9 +25,13 @@ import { CreateCardComponent } from './ui/create-card/create-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [CardHttpService],
+  providers: [
+    CardHttpService,
+    CardStateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

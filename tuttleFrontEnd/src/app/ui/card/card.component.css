@@ -1,7 +1,7 @@
 .cardContainer{
   margin: 15px;
   background-color: whitesmoke;
-  height: 400px;
+  height: 415px;
   width: 270px;
   border-radius: 5px;
 }
@@ -19,7 +19,7 @@
 }
 
 .cardContent{
-  height: 150px;
+  height: 165px;
   background-color: white;
   margin: auto;
   width: 98%;
