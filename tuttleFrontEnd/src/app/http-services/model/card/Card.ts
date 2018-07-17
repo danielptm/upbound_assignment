@@ -8,4 +8,5 @@ export class Card {
   cardStartDate: Date;
   cardEndDate: Date;
   listOfPlans: Plan[];
+  currentWorkflow: string;
 }

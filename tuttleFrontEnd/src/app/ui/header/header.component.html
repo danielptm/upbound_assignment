@@ -10,10 +10,8 @@
             All campaigns
           </button>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" (click)="filterCardsByCampaginId('all')">All</a>
+            <a class="dropdown-item" *ngFor="let campaign of campaigns" (click)="filterCardsByCampaginId(campaign.id)">{{campaign.campaignName}}</a>
           </div>
         </li>
       </ul>
@@ -25,10 +23,8 @@
             <i class="fas fa-filter"></i> <span class="filterText">Pending</span>
           </button>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" (click)="filterCardsByStatus('all')" >All</a>
+            <a class="dropdown-item" *ngFor="let filter of filters" (click)="filterCardsByStatus(filter)">{{filter}}</a>
           </div>
         </li>
       </ul>

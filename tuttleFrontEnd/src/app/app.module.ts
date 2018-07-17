@@ -11,6 +11,10 @@ import {CardHttpService} from './http-services/repository/card-http.service';
 import { CreateCardComponent } from './ui/create-card/create-card.component';
 import {CardStateService} from './client-services/card-state.service';
 import {HttpClientModule} from '@angular/common/http';
+import {FilterStateService} from './client-services/filter-state.service';
+import {FilterHttpService} from './http-services/repository/filter-http.service';
+import {CampaginStateService} from './client-services/campagin-state.service';
+import {CampaignHttpService} from './http-services/repository/campaign-http.service';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   providers: [
     CardHttpService,
-    CardStateService
+    CardStateService,
+    FilterStateService,
+    FilterHttpService,
+    CampaginStateService,
+    CampaignHttpService
   ],
   bootstrap: [AppComponent]
 })

@@ -19,5 +19,9 @@ export class MainComponent implements OnInit {
       .then((cards: Card[]) => {
         this.cards = cards;
       });
+    this.cardState.getCardsAsObservable()
+      .subscribe((cards: Card[]) => {
+        this.cards = cards;
+      });
   }
 }
