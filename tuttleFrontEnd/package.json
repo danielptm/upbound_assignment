@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --prod; cp -R dist/* ../node-seed/frontend; cd ../node-seed; npm run start;",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
