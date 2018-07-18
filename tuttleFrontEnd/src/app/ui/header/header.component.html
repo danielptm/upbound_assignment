@@ -4,8 +4,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
+      <ul class="navbar-nav mr-auto buttonDropDown">
           <button class="btn campaginsButton dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All campaigns
           </button>
@@ -13,12 +12,12 @@
             <a class="dropdown-item" (click)="filterCardsByCampaginId('all')">All</a>
             <a class="dropdown-item" *ngFor="let campaign of campaigns" (click)="filterCardsByCampaginId(campaign.id)">{{campaign.campaignName}}</a>
           </div>
-        </li>
       </ul>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContents">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
+      <ul class="smallScreenList">
+        <li><a class="dropdown-item" (click)="filterCardsByCampaginId('all')">All</a></li>
+        <li><a class="dropdown-item" *ngFor="let campaign of campaigns" (click)="filterCardsByCampaginId(campaign.id)">{{campaign.campaignName}}</a></li>
+      </ul>
+      <ul class="navbar-nav mr-auto buttonDropDown">
           <button class="btn dropdown-toggle filterButton" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-filter"></i> <span class="filterText">Pending</span>
           </button>
@@ -26,8 +25,11 @@
             <a class="dropdown-item" (click)="filterCardsByStatus('all')" >All</a>
             <a class="dropdown-item" *ngFor="let filter of filters" (click)="filterCardsByStatus(filter)">{{filter}}</a>
           </div>
-        </li>
       </ul>
+      <ul class="smallScreenList">
+        <li><a class="dropdown-item" (click)="filterCardsByStatus('all')" >All</a></li>
+        <li><a class="dropdown-item" *ngFor="let filter of filters" (click)="filterCardsByStatus(filter)">{{filter}}</a></li>
+        </ul>
     </div>
     <span class="spacer"></span>
     <app-search></app-search>

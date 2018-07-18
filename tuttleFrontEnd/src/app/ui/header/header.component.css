@@ -38,3 +38,26 @@ button{
 .filterText{
   margin-left: 5px;
 }
+
+.navbar-collapse{
+  overflow: auto;
+}
+
+.dropdown-menu{
+  width: 300px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+@media screen and (max-width: 995px) {
+  .buttonDropDown{
+    display: none;
+  }
+}
+@media screen and (min-width: 995px) {
+  .smallScreenList{
+    display: none;
+  }
+}
