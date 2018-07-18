@@ -1,5 +1,5 @@
 # upbound_assignment
-A small angular excercize with a node server.
+A small angular excercize with a node server. You need node 8 and angular cli installed globally.
 
 To run it clone the repository and run the bash script
 
