@@ -16,7 +16,6 @@
   border-top-right-radius: 5px;
   background-size: cover;
   position: relative;
-
 }
 
 .progressBar{
@@ -55,6 +54,7 @@
 .menuItemText{
   margin-left: 20px;
   font-family: Helvetica Neue;
+  font-weight: 400;
 }
 
 hr{
@@ -106,12 +106,36 @@ hr{
   display: inline;
 }
 
+.cardStateWord{
+  display: inline-block;
+  text-transform: capitalize;
+}
+
 .cardContent{
   height: auto;
   padding-bottom: 20px;
   background-color: white;
   margin: auto;
   width: 98%;
+}
+
+.circle{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.success{
+  background-color: green;
+}
+
+.rejected{
+  background-color: red;
+}
+
+.other{
+  background-color: orange;
 }
 
 @media only screen and (max-width: 600px){

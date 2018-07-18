@@ -5,13 +5,25 @@
     <div class="cardButton">
       <i class="fas fa-pencil-alt editButton">
       <div class="cardButtonDropdown">
-        <div class="menuItem"><i class="fas fa-edit"></i><span class="menuItemText">Edit</span></div>
+        <div class="menuItem">
+          <i class="fas fa-edit"></i>
+          <span class="menuItemText">Edit</span>
+        </div>
         <hr>
-        <div class="menuItem"><i class="far fa-check-circle"></i><span class="menuItemText">Publish</span></div>
+        <div class="menuItem">
+          <i class="far fa-check-circle"></i>
+          <span class="menuItemText">Publish</span>
+        </div>
         <hr>
-        <div class="menuItem"><i class="fas fa-share-alt"></i><span class="menuItemText">Share</span></div>
+        <div class="menuItem">
+          <i class="fas fa-share-alt"></i>
+          <span class="menuItemText">Share</span>
+        </div>
         <hr>
-        <div class="menuItem"><i class="fas fa-trash-alt"></i><span class="menuItemText">Delete</span></div>
+        <div class="menuItem">
+          <i class="fas fa-trash-alt"></i>
+          <span class="menuItemText">Delete</span>
+        </div>
       </div>
       </i>
     </div>
@@ -21,8 +33,14 @@
       <div>
         <div class="priceState">
           <div>{{card.cardTitle}}</div>
-          <div class="price">hi</div>
-          <div class="cardState">hi</div>
+          <div class="price">{{'$' + card.listOfPlans[0].price.amount + '/month'}}</div>
+          <div class="cardState">
+            <div class="cardStateWord">{{card.currentWorkflow}}</div>
+            <div
+              [ngClass]="{'other': card.currentWorkflow === 'saved', 'success': card.currentWorkflow === 'live', 'rejected': card.currentWorkflow === 'rejected'}"
+              class="circle"
+            ></div>
+          </div>
           <div class="progressBar">
           </div>
         </div>
